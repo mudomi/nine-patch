@@ -4,7 +4,7 @@ This plugin adds support for resizable PNG images using the Android-style 9-patc
 
 * Stretch and padding regions are read from black pixels in the image’s 1-pixel border.
 
-* Follows Android’s 9-patch format for parsing and scaling logic.
+* Follows [Android’s 9-patch](https://developer.android.com/studio/write/draw9patch) format for parsing and scaling logic.
 
 * Only `.png` images with 1-pixel black border markers are supported.
 
