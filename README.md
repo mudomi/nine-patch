@@ -50,3 +50,22 @@ Import the plugin:
 ![](./docs/example3.svg)
 
 
+## Develop
+
+**Build the Plugin:**
+
+To compile the plugin for WebAssembly, run:
+
+```bash
+cargo build --target wasm32-unknown-unknown --release
+```
+
+**Run Tests:**
+
+To run the tests for the plugin, use:
+
+```bash
+cargo test
+```
+
+Make sure you have the appropriate Rust toolchain for WebAssembly (`wasm32-unknown-unknown`) installed before building.

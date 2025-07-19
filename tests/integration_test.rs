@@ -161,7 +161,8 @@ fn test_nine_patch_content_info() {
     
     // Expected minimum dimensions based on stretch markers
     // Stretch markers are at positions 2,3 on top and 2,3 on left
-    // So left_fixed = 1, right_fixed = 5-4 = 1, top_fixed = 1, bottom_fixed = 5-4 = 1
-    assert_eq!(min_width, 2, "Minimum width should be 2 (left_fixed + right_fixed)");
-    assert_eq!(min_height, 2, "Minimum height should be 2 (top_fixed + bottom_fixed)");
+    // In content coordinates: stretch_left=1, stretch_right=3, so left_fixed=1, right_fixed=5-3=2
+    // Similarly for vertical: stretch_top=1, stretch_bottom=3, so top_fixed=1, bottom_fixed=5-3=2
+    assert_eq!(min_width, 3, "Minimum width should be 3 (left_fixed + right_fixed = 1 + 2)");
+    assert_eq!(min_height, 3, "Minimum height should be 3 (top_fixed + bottom_fixed = 1 + 2)");
 }
