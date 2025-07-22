@@ -36,7 +36,6 @@ pub fn nine_patch(
     match nine_patch_impl(image_bytes, target_width, target_height) {
         Ok(result) => result,
         Err(e) => {
-            // Return empty vec on error - in a real implementation you might want better error handling
             eprintln!("Nine-patch error: {}", e);
             Vec::new()
         }
