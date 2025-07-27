@@ -1,0 +1,11 @@
+[package]
+name = "nine-patch"
+version = "0.1.0"
+entrypoint = "main.typ"
+authors = ["Dominik Mückstein"]
+license = "MIT"
+description = "Resizable Bitmap Plugin unsing the 9-patch technique."
+repository = "https://github.com/mudomi/nine-patch"
+keywords = ["9-patch", "9", "9-slice", "bitmap", "slice"]
+categories = ["utility", "visualization", "components"]
+exclude = ["/docs/"]
