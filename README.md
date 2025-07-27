@@ -1,3 +1,5 @@
+[![CI/ Test Suite](https://github.com/mudomi/nine-patch/actions/workflows/ci.yml/badge.svg)](https://github.com/mudomi/nine-patch/actions/workflows/ci.yml)
+
 # Typst 9-Patch Plugin
 
 This plugin adds support for resizable PNG images using the Android-style 9-patch format. It enables scalable UI elements by preserving corners and edges while stretching the center.
